@@ -1,0 +1,65 @@
+// variable declaration
+$fixed-gb-h: 300px;
+$primary: #3fc060;
+$light: #f1f8ff;
+$dark: #0f172b;
+.hero-home-img {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-head-bg {
+  background-image: url(../img/index_01.jpg) !important;
+  @extend .hero-home-img;
+}
+
+.home-food-bg {
+  background-image: url(../img/index_food_bg.jpg);
+  @extend .hero-home-img;
+  height: $fixed-gb-h;
+}
+
+.home-res-bg {
+  background-image: url(../img/index_book_bg.jpg);
+  @extend .hero-home-img;
+  height: $fixed-gb-h;
+}
+
+.home-team-bg {
+  background-image: url(../img/index_team_bg.jpg);
+  @extend .hero-home-img;
+  height: $fixed-gb-h;
+}
+
+.nav-pills .nav-item .active {
+  border-bottom: 2px solid $primary;
+}
+
+.form-align {
+  justify-content: center;
+  margin-left: 38%;
+  margin-right: 30%;
+}
+
+.team-item {
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+  height: calc(100% - 38px);
+  transition: 0.5s;
+}
+
+.team-item img {
+  transition: 0.5s;
+}
+
+.team-item:hover img {
+  transform: scale(1.1);
+}
+
+.team-item:hover {
+  height: 100%;
+}
+
+.team-item .btn {
+  border-radius: 38px 38px 0 0;
+}

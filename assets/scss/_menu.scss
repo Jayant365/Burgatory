@@ -1,0 +1,30 @@
+// variable declaration
+$fixed-gb-h: 300px;
+.hero-menu-img {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu-head-bg {
+  background-image: url(../img/menu_head_bg.jpg) !important;
+  @extend .hero-home-img;
+  height: 600px;
+}
+
+.menu-fluid-img {
+  height: 80px;
+  width: 80px;
+}
+
+.menu-lunch-bg {
+  background-image: url(../img/menu_lunch_bg.jpg);
+  @extend .hero-menu-img;
+  height: $fixed-gb-h;
+}
+
+.menu-dinner-bg {
+  background-image: url(../img/menu_dinner_bg.jpg);
+  @extend .hero-menu-img;
+  height: $fixed-gb-h;
+}

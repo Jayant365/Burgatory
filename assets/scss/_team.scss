@@ -1,0 +1,23 @@
+// variable declaration
+$fixed-gb-h: 300px;
+.hero-team-img {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.team-head-bg {
+  background-image: url(../img/team_head_bg.jpg);
+  @extend .hero-team-img;
+  height: 600px;
+}
+
+.team-sec-bg {
+  background-image: url(../img/team_crew_bg.png);
+  @extend .hero-team-img;
+  height: $fixed-gb-h;
+}
+
+.img-fluid-team {
+  height: 219px;
+}

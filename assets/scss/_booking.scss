@@ -1,0 +1,31 @@
+// variable declaration
+$fixed-gb-h: 300px;
+.hero-book-img {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.book-head-bg {
+  background-image: url(../img/book_head_bg.jpg);
+  @extend .hero-book-img;
+  height: 600px;
+}
+
+.book-dis-bg {
+  background-image: url(../img/book_dis_bg.jpg);
+  @extend .hero-book-img;
+  height: $fixed-gb-h;
+}
+
+.allignment_book {
+  justify-content: center;
+  margin-left: 8%;
+  /* margin-right: 30%; */
+}
+
+.font-title {
+  font-size: 30px;
+  line-height: 1.2;
+  color: #d61c22;
+}

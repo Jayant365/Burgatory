@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Burgatory</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicon -->
+  <link href="./assets/img/icon.jpg" rel="icon">
+
+  <!-- Google Web Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
+    rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Custom Stylesheet from Style.scss -->
+  <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <!-- Navbar & Hero Start -->
+  <div class="position-relative p-0 trans-0-4 ">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+      <a href="./index.html" class="navbar-brand p-0">
+        <h1 class="text-prime m-0"><i class="fa fa-utensils me-3"></i>Burgatory</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span><img src="./assets/img/menu-logo.jpg" height="50px" width="50px" alt=""></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse" style="font-family: Nunito, sans-serif;">
+        <div class="navbar-nav ms-auto py-0 pe-4">
+          <a href="./index.html" class="nav-item nav-link">Home</a>
+          <a href="./menu.html" class="nav-item nav-link active">Menu</a>
+          <a href="./booking.html" class="nav-item nav-link">Booking</a>
+          <a href="./contact.html" class="nav-item nav-link">Contact</a>
+          <a href="./service.html" class="nav-item nav-link">Service</a>
+          <a href="./team.html" class="nav-item nav-link">Our Team</a>
+          <a href="./about.html" class="nav-item nav-link">About</a>
+        </div>
+        <a href="./login.html" class="btn btn-primary py-2 px-4">Login</a>
+      </div>
+    </nav>
+
+    <div class="py-5 bg-dark menu-head-bg">
+      <div class="container text-center my-5 pt-5 pb-4">
+        <h1 class="display-3 text-white mb-3">Food Menu</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center text-uppercase">
+            <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+            <li class="breadcrumb-item text-white active" aria-current="page">Menu</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- Navbar & Hero End -->
+
+  <!-- Menu Start -->
+  <div class="container text-center pt-5">
+    <h5 class="section-title ff-secondary text-center text-prime fw-normal">Food Menu</h5>
+    <h1 class="mb-5">Most Popular Items</h1>
+
+    <div class="tab-class text-center">
+      <ul class=" nav nav-pills d-inline-flex justify-content-center border-bottom mb-5 ">
+        <li class="nav-item ">
+          <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active ">
+            <i class="fa fa-coffee fa-2x text-prime "></i>
+            <div class="ps-3 ">
+              <small class="text-body ">Popular</small>
+              <h6 class="mt-n1 mb-0 ">Breakfast</h6>
+            </div>
+          </a>
+        </li>
+      </ul>
+
+      <div class="row g-5 ms-130 ">
+        <div class="col-lg-6 ">
+          <div class="d-flex align-items-center ">
+            <img class="flex-shrink-0 rounded menu-fluid-img" src="./assets/img/breakfast_05.jpg" alt=" ">
+            <div class="d-flex flex-column text-start ps-4 ">
+              <p class="d-flex border-bottom pb-2 ">
+                <span><b>Special Tandori Burger</b><br>
+                  <i><small>ipsum clita erat amet dolor justo diam</small></i>
+                </span>
+              </p>
+              <span class="text-prime ">$110</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="d-flex align-items-center ">
+            <img class="flex-shrink-0 rounded menu-fluid-img" src="./assets/img/breakfast_01.jpg" alt=" ">
+            <div class="d-flex flex-column text-start ps-4 ">
+              <p class="d-flex border-bottom pb-2 ">
+                <span><b>Crispy Burger</b><br>
+                  <i><small>Ipsum ipsum clita erat amet dolor justo diam</small></i>
+                </span>
+              </p>
+              <div class="text-prime ">$90</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="d-flex align-items-center ">
+            <img class="flex-shrink-0 rounded menu-fluid-img" src="./assets/img/breakfast_03.jpg" alt=" ">
+            <div class="d-flex flex-column text-start ps-4 ">
+              <p class="d-flex border-bottom pb-2 ">
+                <span><b>Juicy Burger</b><br>
+                  <i><small>Ipsum ipsum clita erat amet dolor justo diam</small></i>
+                </span>
+              </p>
+              <div class="text-prime ">$135</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="d-flex align-items-center ">
+            <img class="flex-shrink-0 rounded menu-fluid-img" src="./assets/img/breakfast_02.jpg" alt=" ">
+            <div class="d-flex flex-column text-start ps-4 ">
+              <p class="d-flex border-bottom pb-2 ">
+                <span><b>Schezwan Burger</b><br>
+                  <i><small>Ipsum ipsum clita erat amet dolor justo diam</small></i>
+                </span>
+              </p>
+              <div class="text-prime ">$80</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="d-flex align-items-center ">
+            <img class="flex-shrink-0 rounded menu-fluid-img" src="./assets/img/breakfast_04.jpg" alt=" ">
+            <div class="d-flex flex-column text-start ps-4 ">
+              <p class="d-flex border-bottom pb-2 ">
+                <span><b>Paneer Burger</b><br>
+                  <i><small>Ipsum ipsum clita erat amet dolor justo diam</small></i>
+                </span>
+              </p>
+              <div class="text-prime ">$199</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="d-flex align-items-center ">
+            <img class="flex-shrink-0 rounded menu-fluid-img" id="break06" src="./assets/img/breakfast_06.jpg" alt=" ">
+            <div class="d-flex flex-column text-start ps-4 ">
+              <p class="d-flex border-bottom pb-2 ">
+                <span><b>Peanut Wrap</b><br>
+                  <i><small>Ipsum ipsum clita erat amet dolor justo diam</small></i>
+                </span>
+              </p>
+              <div class="text-prime ">$46</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="d-flex align-items-center ">
+            <img class="flex-shrink-0 rounded menu-fluid-img" src="./assets/img/breakfast_07.jpg" alt=" ">
+            <div class="d-flex flex-column text-start ps-4 ">
+              <p class="d-flex border-bottom pb-2 ">
+                <span><b>Classic Wrap</b><br>
+                  <i><small>ipsum clita erat amet dolor justo diam</small></i>
+                </span>
+              </p>
+              <span class="text-prime ">$110</span>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="d-flex align-items-center ">
+            <img class="flex-shrink-0 rounded menu-fluid-img" src="./assets/img/breakfast_08.jpg" alt=" ">
+            <div class="d-flex flex-column text-start ps-4 ">
+              <p class="d-flex border-bottom pb-2 ">
+                <span><b>Buddha Wrap</b><br>
+                  <i><small>Ipsum ipsum clita erat amet dolor justo diam</small></i>
+                </span>
+              </p>
+              <div class="text-prime ">$90</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Start Special Lunch -->
+  <section class="mt-150 menu-lunch-bg">
+    <div class="text-center pt-100 ">
+      <div class="text-center ">
+        <h3 class="section-title ff-secondary text-center text-prime fw-normal ">Special</h3>
+        <h1 class="mb-5 "><i class="fa fa-hamburger text-prime "></i><span class="text-white ">Lunch</span><i
+            class="fa fa-hamburger text-prime "></i>
+        </h1>
+      </div>
+    </div>
+  </section>
+  <div class="container my-100 ">
+    <div class="fade show p-0 ">
+      <div class="row g-5 ms-130 ">
+        <div class="col-lg-6 ">
+          <div class="d-flex align-items-center ">
+            <img class="flex-shrink-0 rounded menu-fluid-img" src="./assets/img/lunch_01.jpg" alt=" ">
+            <div class="d-flex flex-column text-start ps-4 ">
+              <p class="d-flex border-bottom pb-2 ">
+                <span><b>Meal Prep Pesto Chicken & Veggies</b><br>
+                  <i><small>ipsum clita erat amet dolor justo diam</small></i>
+                </span>
+              </p>
+              <span class="text-prime ">$110</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="d-flex align-items-center ">
+            <img class="flex-shrink-0 rounded menu-fluid-img" src="./assets/img/lunch_02.jpg" alt=" ">
+            <div class="d-flex flex-column text-start ps-4 ">
+              <p class="d-flex border-bottom pb-2 ">
+                <span><b>Black Bean–Stuffed Sweet Potatoes</b><br>
+                  <i><small>Ipsum ipsum clita erat amet dolor justo diam</small></i>
+                </span>
+              </p>
+              <div class="text-prime ">$90</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="d-flex align-items-center ">
+            <img class="flex-shrink-0 rounded menu-fluid-img" src="./assets/img/lunch_03.jpg" alt=" ">
+            <div class="d-flex flex-column text-start ps-4 ">
+              <p class="d-flex border-bottom pb-2 ">
+                <span><b>Sheet Pan Sausage & Veggies</b><br>
+                  <i><small>Ipsum ipsum clita erat amet dolor justo diam</small></i>
+                </span>
+              </p>
+              <div class="text-prime ">$135</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="d-flex align-items-center ">
+            <img class="flex-shrink-0 rounded menu-fluid-img" src="./assets/img/lunch_04.jpg" alt=" ">
+            <div class="d-flex flex-column text-start ps-4 ">
+              <p class="d-flex border-bottom pb-2 ">
+                <span><b>Lo Mein</b><br>
+                  <i><small>Ipsum ipsum clita erat amet dolor justo diam</small></i>
+                </span>
+              </p>
+              <div class="text-prime ">$80</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="d-flex align-items-center ">
+            <img class="flex-shrink-0 rounded menu-fluid-img" src="./assets/img/lunch_05.jpg" alt=" ">
+            <div class="d-flex flex-column text-start ps-4 ">
+              <p class="d-flex border-bottom pb-2 ">
+                <span><b>Lemon Garlic Salmon & Asparagus</b><br>
+                  <i><small>Ipsum ipsum clita erat amet dolor justo diam</small></i>
+                </span>
+              </p>
+              <div class="text-prime ">$199</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="d-flex align-items-center ">
+            <img class="flex-shrink-0 rounded menu-fluid-img" src="./assets/img/lunch_06.jpg" alt=" ">
+            <div class="d-flex flex-column text-start ps-4 ">
+              <p class="d-flex border-bottom pb-2 ">
+                <span><b>Tuna & Avocado Wrap</b><br>
+                  <i><small>Ipsum ipsum clita erat amet dolor justo diam</small></i>
+                </span>
+              </p>
+              <div class="text-prime ">$46</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="d-flex align-items-center ">
+            <img class="flex-shrink-0 rounded menu-fluid-img" src="./assets/img/lunch_07.jpg" alt=" ">
+            <div class="d-flex flex-column text-start ps-4 ">
+              <p class="d-flex border-bottom pb-2 ">
+                <span><b>Meal Prep Pesto Chicken & Veggies</b><br>
+                  <i><small>ipsum clita erat amet dolor justo diam</small></i>
+                </span>
+              </p>
+              <span class="text-prime ">$110</span>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="d-flex align-items-center ">
+            <img class="flex-shrink-0 rounded menu-fluid-img" src="./assets/img/lunch_08.jpg" alt=" ">
+            <div class="d-flex flex-column text-start ps-4 ">
+              <p class="d-flex border-bottom pb-2 ">
+                <span><b>Black Bean–Stuffed Sweet Potatoes</b><br>
+                  <i><small>Ipsum ipsum clita erat amet dolor justo diam</small></i>
+                </span>
+              </p>
+              <div class="text-prime ">$90</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Special Lunch -->
+
+  <!-- Start Lovely Dinner -->
+  <section class="mt-150 menu-dinner-bg">
+    <div class="text-center pt-100 ">
+      <div class="text-center ">
+        <h3 class="section-title ff-secondary text-center text-prime fw-normal ">Lovely</h3>
+        <h1 class="mb-5 "><i class="fa fa-utensils text-prime "></i><span class="text-white ">Dinner</span><i
+            class="fa fa-utensils text-prime "></i>
+        </h1>
+      </div>
+    </div>
+  </section>
+  <div class="container my-100 ">
+    <div class="fade show p-0 ">
+      <div class="row g-5 ms-130 ">
+        <div class="col-lg-6 ">
+          <div class="d-flex align-items-center ">
+            <img class="flex-shrink-0 rounded menu-fluid-img" src="./assets/img/lunch_01.jpg" alt=" ">
+            <div class="d-flex flex-column text-start ps-4 ">
+              <p class="d-flex border-bottom pb-2 ">
+                <span><b>Meal Prep Pesto Chicken & Veggies</b><br>
+                  <i><small>ipsum clita erat amet dolor justo diam</small></i>
+                </span>
+              </p>
+              <span class="text-prime ">$110</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="d-flex align-items-center ">
+            <img class="flex-shrink-0 rounded menu-fluid-img" src="./assets/img/lunch_08.jpg" alt=" ">
+            <div class="d-flex flex-column text-start ps-4 ">
+              <p class="d-flex border-bottom pb-2 ">
+                <span><b>Black Bean–Stuffed Sweet Potatoes</b><br>
+                  <i><small>Ipsum ipsum clita erat amet dolor justo diam</small></i>
+                </span>
+              </p>
+              <div class="text-prime ">$90</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="d-flex align-items-center ">
+            <img class="flex-shrink-0 rounded menu-fluid-img" src="./assets/img/lunch_02.jpg" alt=" ">
+            <div class="d-flex flex-column text-start ps-4 ">
+              <p class="d-flex border-bottom pb-2 ">
+                <span><b>Sheet Pan Sausage & Veggies</b><br>
+                  <i><small>Ipsum ipsum clita erat amet dolor justo diam</small></i>
+                </span>
+              </p>
+              <div class="text-prime ">$135</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="d-flex align-items-center ">
+            <img class="flex-shrink-0 rounded menu-fluid-img" src="./assets/img/lunch_07.jpg" alt=" ">
+            <div class="d-flex flex-column text-start ps-4 ">
+              <p class="d-flex border-bottom pb-2 ">
+                <span><b>Lo Mein</b><br>
+                  <i><small>Ipsum ipsum clita erat amet dolor justo diam</small></i>
+                </span>
+              </p>
+              <div class="text-prime ">$80</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="d-flex align-items-center ">
+            <img class="flex-shrink-0 rounded menu-fluid-img" src="./assets/img/lunch_03.jpg" alt=" ">
+            <div class="d-flex flex-column text-start ps-4 ">
+              <p class="d-flex border-bottom pb-2 ">
+                <span><b>Lemon Garlic Salmon & Asparagus</b><br>
+                  <i><small>Ipsum ipsum clita erat amet dolor justo diam</small></i>
+                </span>
+              </p>
+              <div class="text-prime ">$199</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="d-flex align-items-center ">
+            <img class="flex-shrink-0 rounded menu-fluid-img" src="./assets/img/lunch_06.jpg" alt=" ">
+            <div class="d-flex flex-column text-start ps-4 ">
+              <p class="d-flex border-bottom pb-2 ">
+                <span><b>Tuna & Avocado Wrap</b><br>
+                  <i><small>Ipsum ipsum clita erat amet dolor justo diam</small></i>
+                </span>
+              </p>
+              <div class="text-prime ">$46</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="d-flex align-items-center ">
+            <img class="flex-shrink-0 rounded menu-fluid-img" src="./assets/img/lunch_04.jpg" alt=" ">
+            <div class="d-flex flex-column text-start ps-4 ">
+              <p class="d-flex border-bottom pb-2 ">
+                <span><b>Meal Prep Pesto Chicken & Veggies</b><br>
+                  <i><small>ipsum clita erat amet dolor justo diam</small></i>
+                </span>
+              </p>
+              <span class="text-prime ">$110</span>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 ">
+          <div class="d-flex align-items-center ">
+            <img class="flex-shrink-0 rounded menu-fluid-img" src="./assets/img/lunch_05.jpg" alt=" ">
+            <div class="d-flex flex-column text-start ps-4 ">
+              <p class="d-flex border-bottom pb-2 ">
+                <span><b>Black Bean–Stuffed Sweet Potatoes</b><br>
+                  <i><small>Ipsum ipsum clita erat amet dolor justo diam</small></i>
+                </span>
+              </p>
+              <div class="text-prime ">$90</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Lovely Dinner -->
+
+
+  <!-- Menu End -->
+
+  <!-- Footer Start -->
+  <div class="container-fluid bg-dark text-light footer pt-5 mt-5">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6">
+          <h4 class="section-title ff-secondary text-start text-prime fw-normal mb-4">Company</h4>
+          <a class="btn btn-link" href="./about.html">About Us</a>
+          <a class="btn btn-link" href="./contact.html">Contact Us</a>
+          <a class="btn btn-link" href="./booking.html">Reservation</a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="section-title ff-secondary text-start text-prime fw-normal mb-4">Contact</h4>
+          <p class="mb-2">
+            <a href="./contact.html"><i class="fa fa-map-marker-alt me-3"></i></a>131, Phase 3B-2, Sector 60, Sahibzada
+            Ajit Singh Nagar, Punjab 160059
+          </p>
+          <p class="mb-2"><a href="./contact.html"><i class="fa fa-phone-alt me-3"></i></a>(+91) 7988049693</p>
+          <p class="mb-2"><a
+              href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCHrdlGbZRvJdGRksvQvGQpSDGNhfWDRPZBFFsKcKMzmHJWtFnJgJsnwDbpcRLmrmKrJtLbB"><i
+                class="fa fa-envelope me-3"></i></a>Jayant.Jain@bluebash.co</p>
+          <div class="d-flex pt-2">
+            <a class="btn btn-outline-light btn-social" href="https://twitter.com/home"><i
+                class="fab fa-twitter"></i></a>
+            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/jayant.jain.9699"><i
+                class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-light btn-social"
+              href="https://www.youtube.com/channel/UCJfU42Sh2njPEE4OKDgbMSA"><i class="fab fa-youtube"></i></a>
+            <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/jayant-jain-772364210/"><i
+                class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="section-title ff-secondary text-start text-prime fw-normal mb-4">Opening</h4>
+          <h5 class="text-light fw-normal">Monday - Saturday</h5>
+          <p>09AM - 10PM</p>
+          <h5 class="text-light fw-normal">Sunday</h5>
+          <p>10AM - 09PM</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="section-title ff-secondary text-start text-prime fw-normal mb-4">Newsletter</h4>
+          <p>For latest updates and upcoming offer <br>Do signup</p>
+          <div class="position-relative mx-auto mw-100">
+            <form onsubmit="submit1()">
+              <input class="form-control border-primary w-100 py-3 ps-4 pe-5 mb-3" required type="text"
+                placeholder="Your email">
+              <button type="submit" class="btn btn-primary py-2 position-absolute end-0 me-80">SignUp</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            &copy; <a class="border-bottom" href="./index.html">Burgatory</a>, All Right Reserved. Designed By <a
+              class="border-bottom" href="./index.html">Jayant_Jain</a>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <div class="footer-menu">
+              <a href="./index.html">Home</a>
+              <a href="">Cookies</a>
+              <a href="./service.html">Help</a>
+              <a href="">FQAs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- Back to Top -->
+  <a href="# " class="btn btn-lg btn-primary btn-lg-square back-to-top "><i class="bi bi-arrow-up "></i></a>
+
+
+  <!-- JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js "></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

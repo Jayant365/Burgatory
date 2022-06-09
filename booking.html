@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Burgatory</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicon -->
+  <link href="./assets/img/icon.jpg" rel="icon">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
+    rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- AOS Animation Stylesheet -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Custom Stylesheet from Style.scss -->
+  <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+
+<body style="overflow-x: hidden;">
+  <div class="container_head_foot bg-white p-0">
+
+    <!-- Navbar & Hero Start -->
+    <div class="position-relative p-0 trans-0-4 ">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+        <a href="./index.html" class="navbar-brand p-0">
+          <h1 class="text-prime m-0"><i class="fa fa-utensils me-3"></i>Burgatory</h1>
+          <!-- <img src="img/logo.png" alt="Logo"> -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span><img src="./assets/img/menu-logo.jpg" height="50px" width="50px" alt=""></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse" style="font-family: Nunito, sans-serif;">
+          <div class="navbar-nav ms-auto py-0 pe-4">
+            <a href="./index.html" class="nav-item nav-link">Home</a>
+            <a href="./menu.html" class="nav-item nav-link">Menu</a>
+            <a href="./booking.html" class="nav-item nav-link active">Booking</a>
+            <a href="./contact.html" class="nav-item nav-link">Contact</a>
+            <a href="./service.html" class="nav-item nav-link">Service</a>
+            <a href="./team.html" class="nav-item nav-link">Our Team</a>
+            <a href="./about.html" class="nav-item nav-link">About</a>
+          </div>
+          <a href="./login.html" class="btn btn-primary py-2 px-4">Login</a>
+        </div>
+
+      </nav>
+
+      <div class="container_head_foot py-5 bg-dark mb-5 book-head-bg">
+        <div class="container text-center my-5 pt-5 pb-4 ">
+          <h1 class="display-3 text-white mb-3">Booking</h1>
+          <nav aria-label="breadcrumb ">
+            <ol class="breadcrumb justify-content-center text-uppercase ">
+              <li class="breadcrumb-item "><a href="./index.html">Home</a></li>
+              <li class="breadcrumb-item text-white active " aria-current="page ">Booking</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <div>
+
+    </div>
+
+    <!-- Reservation Start -->
+    <section class="py-5 pb-113 ">
+      <div class="container ">
+        <div class="row ">
+          <div class="col-lg-12 pb-30 ">
+            <div class="text-center ">
+              <span class="font-title text-center ff-secondary ">
+                Reservation
+              </span>
+
+              <h1 class="tex-center mb-35 mt-2 ">
+                Book table
+              </h1>
+            </div>
+
+            <div class="py-5">
+              <div class="row ">
+
+                <form name="booking" onsubmit="return booking1()" action="./booking.html">
+                  <div class="allignment_book">
+                    <div class="row ">
+                      <div class="col-lg-4">
+                        <div class="form-floating ">
+                          <input type="text" required class="form-control rounded-10 " placeholder="Your Name ">
+                          <label for="name ">Your Name</label>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="form-floating date " data-target-input="nearest ">
+                          <input type="date" required min="2022-02-27"
+                            class="form-control datetimepicker-input rounded-10 " id="datetime "
+                            placeholder="Date & Time" />
+                          <label for="datetime ">Date & Time(like: DD/MM/YYYY")</label>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 ">
+                        <div class="form-floating ">
+                          <input type="email" required class="form-control rounded-10 " placeholder="Your Email">
+                          <label for="email ">Your Email</label>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 mt-5">
+                        <div class="form-floating ">
+                          <input type="number" required class="form-control rounded-10 " min="6000000000"
+                            placeholder="Your Mobile Number" name="mobile">
+                          <label for="Mobile">Your Mobile Number</label>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 mt-5">
+                        <div class="form-floating ">
+                          <select class="form-select rounded-10 ">
+                            <option value=" 1 ">People 1</option>
+                            <option value=" 2 ">People 2</option>
+                            <option value=" 3 ">People 3</option>
+                            <option value=" 4 ">People 4</option>
+                            <option value=" 5 ">People 5</option>
+                            <option value=" 6 ">For Family (Upto 10 People)</option>
+
+                          </select>
+                          <label for=" select1 ">No Of People</label>
+                        </div>
+                      </div>
+                      <div class=" col-lg-4 mt-5 ">
+                        <div class=" form-floating ">
+                          <input type=" text " required class=" form-control
+                            rounded-10 " placeholder=" Your Address ">
+                          <label for=" Address ">Your Address</label>
+                        </div>
+                      </div>
+
+                      <div class=" row mt-5">
+                        <div class=" col-lg-6 ms-25">
+                          <div class=" form-floating ">
+                            <textarea class=" form-control rounded-10 " placeholder="
+                            Special Request " style=" height: 100px "></textarea>
+                            <label for=" message ">Special Request</label>
+                          </div>
+                        </div>
+                        <div class="col-lg-12 mt-5 ms-35 w-30">
+                          <button class=" btn btn-primary w-100 py-3" type="
+                            submit ">Book Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Reservation End -->
+
+    <section class="book-dis-bg">
+      <div class=" text-center pt-100 ">
+        <h3 class=" pl-15 ">
+          Discover
+        </h3>
+
+        <h1 class=" text-center text-light ">
+          Our Video
+        </h1>
+
+      </div>
+
+    </section>
+    <div class=" container-xxl row" style="padding-top: 80px;">
+      <div class=" col-md-6 " data-aos=" zoom-in">
+        <h4 class=" text-center ">
+          Reserve by Phone
+        </h4>
+
+        <p class=" text-start ">
+          Using an phone restaurant reservation system gives customers the freedom to make a booking for our family and
+          friends party anytime time in b/w our working hrs.<br>
+          <b>(+91) 79880 49693</b>
+        </p>
+      </div>
+
+      <div class=" col-md-6 " data-aos=" zoom-in ">
+        <h4 class=" text-center ">
+          For Event Booking
+        </h4>
+
+        <p class=" text-start ">
+          Using an restaurant reservation system for a particular event gives customers the freedom to make a booking
+          for our family and friends party and any other event at anytime time in b/w our working hrs.<br>
+          <b>(+91) 7988049693</b>
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Footer Start -->
+    <div class=" container-fluid bg-dark text-light footer pt-5 mt-5 ">
+      <div class=" container py-5 ">
+        <div class=" row g-5 ">
+          <div class=" col-lg-3 col-md-6 ">
+            <h4 class=" section-title ff-secondary text-start text-prime fw-normal mb-4 ">Company</h4>
+            <a class=" btn btn-link " href=" ./about.html ">About Us</a>
+            <a class=" btn btn-link " href=" ./contact.html ">Contact Us</a>
+            <a class=" btn btn-link " href=" ./booking.html ">Reservation</a>
+          </div>
+          <div class=" col-lg-3 col-md-6 ">
+            <h4 class=" section-title ff-secondary text-start text-prime fw-normal mb-4 ">Contact</h4>
+            <p class=" mb-2 ">
+              <a href=" ./contact.html "><i class=" fa fa-map-marker-alt me-3 "></i></a>131, Phase 3B-2, Sector 60,
+              Sahibzada Ajit Singh Nagar, Punjab 160059
+            </p>
+            <p class=" mb-2 "><a href=" ./contact.html "><i class=" fa fa-phone-alt me-3 "></i></a>(+91) 7988049693</p>
+            <p class=" mb-2 "><a
+                href="
+                            https://mail.google.com/mail/u/0/#inbox?compose=CllgCHrdlGbZRvJdGRksvQvGQpSDGNhfWDRPZBFFsKcKMzmHJWtFnJgJsnwDbpcRLmrmKrJtLbB "><i
+                  class="
+                            fa fa-envelope me-3 "></i></a>Jayant.Jain@bluebash.co</p>
+            <div class=" d-flex pt-2 ">
+              <a class=" btn btn-outline-light btn-social " href=" https://twitter.com/home "><i class="
+                            fab fa-twitter "></i></a>
+              <a class=" btn btn-outline-light btn-social " href="
+                            https://www.facebook.com/jayant.jain.9699 "><i class=" fab fa-facebook-f "></i></a>
+              <a class=" btn btn-outline-light btn-social " href="
+                            https://www.youtube.com/channel/UCJfU42Sh2njPEE4OKDgbMSA "><i
+                  class=" fab fa-youtube "></i></a>
+              <a class=" btn btn-outline-light btn-social " href="
+                            https://www.linkedin.com/in/jayant-jain-772364210/ "><i
+                  class=" fab fa-linkedin-in "></i></a>
+            </div>
+          </div>
+          <div class=" col-lg-3 col-md-6 ">
+            <h4 class=" section-title ff-secondary text-start text-prime fw-normal mb-4 ">Opening</h4>
+            <h5 class=" text-light fw-normal ">Monday - Saturday</h5>
+            <p>09AM - 10PM</p>
+            <h5 class=" text-light fw-normal ">Sunday</h5>
+            <p>10AM - 09PM</p>
+          </div>
+          <div class=" col-lg-3 col-md-6 ">
+            <h4 class=" section-title ff-secondary text-start text-prime fw-normal mb-4 ">Newsletter</h4>
+            <p>For latest updates and upcoming offer <br>Do signup</p>
+            <div class=" position-relative mx-auto mw-100 ">
+              <form onsubmit=" submit1() ">
+                <input class=" form-control border-primary w-100 py-3 ps-4 pe-5 mb-3 " required type="
+                            text " placeholder=" Your email ">
+                <button type=" submit " class=" btn btn-primary py-2 position-absolute end-0 me-80 ">SignUp</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" container ">
+        <div class=" copyright ">
+          <div class=" row ">
+            <div class=" col-md-6 text-center text-md-start mb-3 mb-md-0 ">
+              &copy; <a class=" border-bottom " href="
+                            ./index.html ">Burgatory</a>, All Right Reserved. Designed By <a class="
+                            border-bottom " href=" ./index.html ">Jayant_Jain</a>
+            </div>
+            <div class=" col-md-6 text-center text-md-end ">
+              <div class=" footer-menu ">
+                <a href=" ./index.html ">Home</a>
+                <a href=" ">Cookies</a>
+                <a href=" ./service.html ">Help</a>
+                <a href=" ">FQAs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href=" # " class=" btn btn-lg btn-primary btn-lg-square back-to-top "><i class=" bi bi-arrow-up "></i></a>
+  </div>
+
+
+
+  <!-- JavaScript Libraries -->
+  <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js "></script>
+  <!-- Template Javascript -->
+  <script src=" ./assets/js/main.js "></script>
+  <!-- AOS Animation -->
+  <script src=" https://unpkg.com/aos@next/dist/aos.js "></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

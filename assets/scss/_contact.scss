@@ -1,0 +1,18 @@
+// variable declaration
+$fixed-gb-h: 300px;
+.hero-cont-img {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cont-head-bg {
+  background-image: url(../img/contact_head_bg.jpg);
+  @extend .hero-cont-img;
+  height: 600px;
+}
+
+.maps {
+  min-height: 350px;
+  border: 0;
+}
